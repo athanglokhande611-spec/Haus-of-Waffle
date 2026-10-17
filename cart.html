@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart | Haus of Waffle</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>HAUS</span>
+        <span>OF WAFFLE</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Visit Us</a>
+        <a class="active" href="cart.html">
+            🛒 Cart <span id="cartCount">0</span>
+        </a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleNav()">☰</button>
+
+</header>
+
+
+<section class="page-heading">
+
+    <p class="small-title">YOUR SWEET SELECTION</p>
+
+    <h1>Your Cart</h1>
+
+</section>
+
+
+<section class="cart-container">
+
+    <div id="cartItems"></div>
+
+    <div class="cart-summary">
+
+        <p>Total</p>
+
+        <h2>₹<span id="cartTotal">0</span></h2>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Place Order →
+        </button>
+
+        <button class="clear-btn" onclick="clearCart()">
+            Clear Cart
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">HAUS OF WAFFLE</div>
+
+    <p>Made with love, waffles & good vibes. 🧇</p>
+
+    <p class="copyright">© 2026 Haus of Waffle</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

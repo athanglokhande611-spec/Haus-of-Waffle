@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haus of Waffle | Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>HAUS</span>
+        <span>OF WAFFLE</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="menu.html">Menu</a>
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="cart.html" class="cart-link">
+            🛒 Cart <span id="cartCount">0</span>
+        </a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleNav()">☰</button>
+
+</header>
+
+
+<section class="page-heading">
+
+    <p class="small-title">SOMETHING FOR EVERY MOOD</p>
+
+    <h1>Our Menu</h1>
+
+    <p>
+        Pick your favourite and make your moment sweeter.
+    </p>
+
+</section>
+
+
+<div class="category-buttons">
+
+    <button class="category active" onclick="showCategory('waffles', this)">
+        Waffles
+    </button>
+
+    <button class="category" onclick="showCategory('shakes', this)">
+        Thick Shakes
+    </button>
+
+    <button class="category" onclick="showCategory('softy', this)">
+        Softy
+    </button>
+
+</div>
+
+
+<!-- WAFFLES -->
+
+<section id="waffles" class="menu-section">
+
+    <div class="menu-image">
+        <img src="Waffle.png" alt="Waffles">
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Belgium Chocolate Waffle</h3>
+            <p>Classic crispy waffle with chocolate.</p>
+            <strong>₹99</strong>
+            <button onclick="addToCart('Belgium Chocolate Waffle',99)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Triple Chocolate Waffle</h3>
+            <p>Triple chocolate goodness.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Triple Chocolate Waffle',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Dark & White Fantasy</h3>
+            <p>Rich dark and white chocolate.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Dark & White Fantasy',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Rich KitKat Waffle</h3>
+            <p>Crispy waffle with KitKat.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Rich KitKat Waffle',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Oreo Creme Waffle</h3>
+            <p>Oreo cream and crunchy waffle.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Oreo Creme Waffle',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Strawberry Creamcheese Waffle</h3>
+            <p>Sweet strawberry creamy delight.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Strawberry Creamcheese Waffle',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Red Velvet Waffle</h3>
+            <p>Soft red velvet inspired waffle.</p>
+            <strong>₹119</strong>
+            <button onclick="addToCart('Red Velvet Waffle',119)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Lotus Biscoff Waffle</h3>
+            <p>Premium Biscoff flavour.</p>
+            <strong>₹139</strong>
+            <button onclick="addToCart('Lotus Biscoff Waffle',139)">
+                Add +
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SHAKES -->
+
+<section id="shakes" class="menu-section hidden">
+
+    <div class="menu-image">
+        <img src="Thick Shake.png" alt="Thick Shakes">
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>KitKat Thick Shake</h3>
+            <p>Thick, creamy and chocolatey.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('KitKat Thick Shake',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Oreo Thick Shake</h3>
+            <p>Creamy Oreo goodness.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Oreo Thick Shake',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Butterscotch Thick Shake</h3>
+            <p>Sweet butterscotch flavour.</p>
+            <strong>₹109</strong>
+            <button onclick="addToCart('Butterscotch Thick Shake',109)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Nutella Thick Shake</h3>
+            <p>Rich hazelnut chocolate flavour.</p>
+            <strong>₹119</strong>
+            <button onclick="addToCart('Nutella Thick Shake',119)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Oreo Nutella Thick Shake</h3>
+            <p>Oreo meets Nutella.</p>
+            <strong>₹129</strong>
+            <button onclick="addToCart('Oreo Nutella Thick Shake',129)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Lotus Biscoff Thick Shake</h3>
+            <p>Premium Biscoff shake.</p>
+            <strong>₹129</strong>
+            <button onclick="addToCart('Lotus Biscoff Thick Shake',129)">
+                Add +
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOFTY -->
+
+<section id="softy" class="menu-section hidden">
+
+    <div class="menu-image">
+        <img src="softy.png" alt="Softy">
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Vanilla Softy</h3>
+            <p>Classic vanilla softy.</p>
+            <strong>₹20</strong>
+            <button onclick="addToCart('Vanilla Softy',20)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Chocolate Softy</h3>
+            <p>Classic chocolate softy.</p>
+            <strong>₹20</strong>
+            <button onclick="addToCart('Chocolate Softy',20)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Strawberry Softy</h3>
+            <p>Fresh strawberry flavour.</p>
+            <strong>₹20</strong>
+            <button onclick="addToCart('Strawberry Softy',20)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Butterscotch Softy</h3>
+            <p>Sweet butterscotch flavour.</p>
+            <strong>₹20</strong>
+            <button onclick="addToCart('Butterscotch Softy',20)">
+                Add +
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Choco Dip Softy</h3>
+            <p>Softy with chocolate dip.</p>
+            <strong>₹30</strong>
+            <button onclick="addToCart('Choco Dip Softy',30)">
+                Add +
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">HAUS OF WAFFLE</div>
+
+    <p>Made with love, waffles & good vibes. 🧇</p>
+
+    <p class="copyright">
+        © 2026 Haus of Waffle
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
